@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Matías Ignacio Ramírez Benavides - Ingeniero Civil en Automatización">
+    <title>Matías Ignacio Ramírez Benavides | Ingeniero Civil en Automatización</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Matías Ignacio Ramírez Benavides<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li><a href="#trabajos" class="nav-link">Trabajos</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO / SOBRE MÍ ===== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <p class="hero-greeting">Hola, soy</p>
+                <h1 class="hero-name">Matías Ignacio Ramírez Benavides</h1>
+                <h2 class="hero-title">
+                    <span class="gradient-text">Ingeniero Civil en Automatización</span>
+                </h2>
+                <p class="hero-description">
+                    Apasionado por la integración de sistemas industriales, el control de procesos
+                    y la transformación digital de la industria. Actualmente ampliando mi perfil
+                    con <strong>análisis de datos</strong> y certificaciones de Google en Coursera,
+                    combinando el mundo de la automatización con la inteligencia de datos para
+                    construir soluciones más inteligentes y eficientes.
+                </p>
+                <div class="hero-cta">
+                    <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Krou705" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/matias-ignacio-ramirez-benavides" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                    </a>
+                    <a href="mailto:matiasramirez705@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">perfil.json</span>
+                    </div>
+                    <pre class="code-body"><code><span class="c-key">{
+</span>  <span class="c-prop">"profesión"</span>: <span class="c-str">"Ing. Civil en Automatización"</span>,
+  <span class="c-prop">"formación"</span>: <span class="c-str">"Ingeniería Civil"</span>,
+  <span class="c-prop">"especialización"</span>: <span class="c-str">"Automatización Industrial"</span>,
+  <span class="c-prop">"actualmente"</span>: [
+    <span class="c-str">"Análisis de Datos (Coursera)"</span>,
+    <span class="c-str">"Google Data Analytics"</span>,
+    <span class="c-str">"Google IT Support"</span>
+  ],
+  <span class="c-prop">"intereses"</span>: [<span class="c-str">"PLC"</span>, <span class="c-str">"SCADA"</span>, <span class="c-str">"IoT"</span>, <span class="c-str">"Python"</span>],
+  <span class="c-prop">"disponible"</span>: <span class="c-bool">true</span>
+<span class="c-key">}</span></code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-lead">
+                        Soy Ingeniero Civil en Automatización, especializado en el diseño,
+                        implementación y optimización de sistemas de control industrial.
+                    </p>
+                    <p>
+                        A lo largo de mi formación he trabajado con tecnologías como PLCs,
+                        sistemas SCADA, instrumentación industrial y redes de comunicación
+                        industrial. Mi enfoque está en crear soluciones que mejoren la
+                        eficiencia, seguridad y productividad de los procesos productivos.
+                    </p>
+                    <p>
+                        Actualmente estoy expandiendo mi perfil hacia el <strong>análisis de
+                        datos</strong> a través de certificaciones profesionales de Google en
+                        Coursera, incluyendo Google Data Analytics y Google IT Support. Mi
+                        objetivo es integrar el análisis de datos con la automatización
+                        industrial para construir sistemas más inteligentes y basados en
+                        decisiones data-driven.
+                    </p>
+                    <p>
+                        Cuando no estoy estudiando o programando, me gusta explorar nuevos
+                        proyectos personales, leer sobre tendencias en Industria 4.0 y
+                        contribuir en comunidades técnicas.
+                    </p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="info-item">
+                        <span class="info-label">Ubicación</span>
+                        <span class="info-value">Comuna de Santa Juana, Chile</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Formación</span>
+                        <span class="info-value">Ing. Civil en Automatización</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Estudiando ahora</span>
+                        <span class="info-value">Análisis de Datos (Google/Coursera)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Idiomas</span>
+                        <span class="info-value">Español (nativo), Inglés (básico)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Disponibilidad</span>
+                        <span class="info-value status-available">Abierto a oportunidades</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CURSOS ===== -->
+    <section id="cursos" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Cursos y Certificaciones</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-subtitle reveal">
+                Formación continua en automatización, análisis de datos y tecnologías de la
+                información. Siempre aprendiendo algo nuevo.
+            </p>
+            <div class="courses-grid">
+                <!-- Curso 1 -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Coursera · Google</span>
+                        <span class="course-status status-progress">En progreso</span>
+                    </div>
+                    <h3 class="course-title">Google Data Analytics</h3>
+                    <p class="course-desc">
+                        Programa profesional enfocado en el análisis de datos: limpieza,
+                        visualización, análisis estadístico y storytelling con datos usando
+                        herramientas como Sheets, SQL, R y Tableau.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">8 cursos · ~180 h</span>
+                    </div>
+                </article>
+
+                <!-- Curso 2 -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Coursera · Google</span>
+                        <span class="course-status status-progress">En progreso</span>
+                    </div>
+                    <h3 class="course-title">Google IT Support</h3>
+                    <p class="course-desc">
+                        Certificación profesional en soporte de TI: redes, sistemas operativos,
+                        administración de sistemas, seguridad informática y atención al usuario.
+                        Fundamentos sólidos de infraestructura tecnológica.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">5 cursos · ~100 h</span>
+                    </div>
+                </article>
+
+                <!-- Curso 3 -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Coursera</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Python para Análisis de Datos</h3>
+                    <p class="course-desc">
+                        Introducción a Python con foco en librerías como Pandas, NumPy y
+                        Matplotlib. Manipulación de datasets, limpieza y visualización de datos
+                        aplicados a casos reales.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2024</span>
+                        <span class="course-duration">~40 h</span>
+                    </div>
+                </article>
+
+                <!-- Curso 4 -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Platzi / Udemy</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Programación de PLCs</h3>
+                    <p class="course-desc">
+                        Curso práctico de programación de controladores lógicos programables
+                        (Siemens S7, Allen-Bradley) usando lógica ladder y bloques de función.
+                        Aplicaciones en control industrial y automatización de procesos.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2024</span>
+                        <span class="course-duration">~30 h</span>
+                    </div>
+                </article>
+
+                <!-- Curso 5 - plantilla para copiar/pegar -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">[Plataforma]</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">[Nombre del curso]</h3>
+                    <p class="course-desc">
+                        [Copia este bloque para agregar un nuevo curso. Describe brevemente
+                        qué aprendiste, qué herramientas usaste y qué habilidades adquiriste.]
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">[Año]</span>
+                        <span class="course-duration">[Duración]</span>
+                    </div>
+                </article>
+                <!-- Fin plantilla para copiar/pegar -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRABAJOS / EXPERIENCIA ===== -->
+    <section id="trabajos" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Experiencia Profesional</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Trabajo 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">[Puesto / Cargo]</h3>
+                            <span class="timeline-date">[Mes Año] — Presente</span>
+                        </div>
+                        <h4 class="timeline-company">[Empresa / Organización]</h4>
+                        <ul class="timeline-tasks">
+                            <li>Describe aquí tu responsabilidad principal o logro más relevante.</li>
+                            <li>Menciona tecnologías, herramientas o metodologías que usaste.</li>
+                            <li>Si puedes, cuantifica el impacto (ej: "reducción del 20% en tiempos de...").</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">PLC</span>
+                            <span class="tag">SCADA</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trabajo 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">[Puesto anterior]</h3>
+                            <span class="timeline-date">[Mes Año] — [Mes Año]</span>
+                        </div>
+                        <h4 class="timeline-company">[Empresa / Organización]</h4>
+                        <ul class="timeline-tasks">
+                            <li>Describe brevemente qué hacías y tus principales logros.</li>
+                            <li>Menciona con quién colaborabas o el alcance del proyecto.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Automatización</span>
+                            <span class="tag">Instrumentación</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trabajo 3 - Práctica / Pasantía -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Practicante / Pasantía</h3>
+                            <span class="timeline-date">[Mes Año] — [Mes Año]</span>
+                        </div>
+                        <h4 class="timeline-company">[Empresa / Organización]</h4>
+                        <ul class="timeline-tasks">
+                            <li>Apoyo en proyectos de automatización y mantenimiento de sistemas.</li>
+                            <li>Documentación técnica y elaboración de informes.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Mantenimiento</span>
+                            <span class="tag">Documentación</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Proyectos</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-subtitle reveal">
+                Una selección de proyectos personales y académicos donde apliqué lo aprendido.
+            </p>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <article class="project-card reveal">
+                    <div class="project-image project-image-1">
+                        <div class="project-overlay">
+                            <span class="project-category">Automatización</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Sistema de Monitoreo de Procesos</h3>
+                        <p class="project-desc">
+                            Tablero en tiempo real para visualizar variables de un proceso
+                            industrial usando Python, sensores y una interfaz web. Integración
+                            de datos de PLC con visualización data-driven.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>MQTT</span>
+                            <span>Grafana</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">Ver código →</a>
+                            <a href="#" target="_blank" rel="noopener">Demo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card reveal">
+                    <div class="project-image project-image-2">
+                        <div class="project-overlay">
+                            <span class="project-category">Análisis de Datos</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Análisis de Eficiencia Energética</h3>
+                        <p class="project-desc">
+                            Proyecto del curso Google Data Analytics: análisis exploratorio de
+                            consumo energético de una planta industrial para identificar
+                            oportunidades de ahorro. Incluye limpieza, visualización y
+                            storytelling con datos.
+                        </p>
+                        <div class="project-tech">
+                            <span>Pandas</span>
+                            <span>SQL</span>
+                            <span>Tableau</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">Ver proyecto →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project-card reveal">
+                    <div class="project-image project-image-3">
+                        <div class="project-overlay">
+                            <span class="project-category">IoT</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Estación Meteorológica IoT</h3>
+                        <p class="project-desc">
+                            Estación de monitoreo de temperatura, humedad y presión con ESP32,
+                            que envía datos a la nube y permite visualizarlos desde cualquier
+                            dispositivo. Proyecto personal de aprendizaje de IoT.
+                        </p>
+                        <div class="project-tech">
+                            <span>ESP32</span>
+                            <span>C++</span>
+                            <span>Firestore</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">Ver código →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section id="habilidades" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Habilidades</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">Automatización Industrial</h3>
+                    <div class="skill-list">
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>PLCs (Siemens / Allen-Bradley)</span><span>85%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>SCADA / HMI</span><span>80%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Instrumentación industrial</span><span>75%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Redes industriales (Modbus, Profibus)</span><span>70%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">Análisis de Datos</h3>
+                    <div class="skill-list">
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Python (Pandas, NumPy)</span><span>70%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="70%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>SQL</span><span>65%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="65%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Visualización (Tableau / Grafana)</span><span>60%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="60%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Estadística aplicada</span><span>55%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="55%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">Programación y Herramientas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">AutoCAD</span>
+                        <span class="skill-tag">TIA Portal</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">ESP32</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">Habilidades Blandas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Resolución de problemas</span>
+                        <span class="skill-tag">Pensamiento analítico</span>
+                        <span class="skill-tag">Trabajo en equipo</span>
+                        <span class="skill-tag">Comunicación técnica</span>
+                        <span class="skill-tag">Autodidacta</span>
+                        <span class="skill-tag">Gestión del tiempo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">06</span>
+                <h2 class="section-title">Contacto</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-wrap">
+                <div class="contact-info reveal">
+                    <h3 class="contact-lead">¿Hablamos?</h3>
+                    <p>
+                        Si tienes un proyecto, una oportunidad laboral o simplemente quieres
+                        conectar, no dudes en escribirme. Estoy abierto a nuevas oportunidades
+                        y colaboraciones.
+                    </p>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon">@</span>
+                            <a href="mailto:matiasramirez705@gmail.com">matiasramirez705@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">in</span>
+                            <a href="https://linkedin.com/in/matias-ignacio-ramirez-benavides" target="_blank" rel="noopener">linkedin.com/in/matias-ignacio-ramirez-benavides</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">gh</span>
+                            <a href="https://github.com/Krou705" target="_blank" rel="noopener">github.com/Krou705</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="contact-form reveal" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Matías Ignacio Ramírez Benavides</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">matiasramirez705@gmail.com</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">Enviar mensaje</button>
+                    <p class="form-note" id="form-note"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-text">
+                © <span id="year"></span> Matías Ignacio Ramírez Benavides. Hecho con HTML, CSS y JS.
+            </p>
+            <a href="#hero" class="footer-top">Volver arriba ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
