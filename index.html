@@ -16,12 +16,17 @@
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 <script>
-const lightbox = GLightbox({
-    touchNavigation: true,
-    loop: true,
-    zoomable: true
+document.addEventListener("DOMContentLoaded", function () {
+    GLightbox({
+        selector: ".glightbox",
+        loop: true,
+        touchNavigation: true,
+        zoomable: true
+    });
 });
 </script>
+
+</body>
 <body>
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar" id="navbar">
