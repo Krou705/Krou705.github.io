@@ -44,7 +44,7 @@
         <div class="hero-container">
             <div class="hero-content reveal">
                 <p class="hero-greeting">Hola, soy</p>
-                <h1 class="hero-name">Matías Ignacio Ramírez</h1>
+                <h1 class="hero-name">Matías Ignacio Ramírez Benavides</h1>
                 <h2 class="hero-title">
                     <span class="gradient-text">Ingeniero Civil en Automatización</span>
                 </h2>
@@ -95,11 +95,10 @@
   <span class="c-prop">"universidad"</span>: <span class="c-str">"Universidad del Bío-Bío"</span>,
   <span class="c-prop">"ubicacion"</span>: <span class="c-str">"Santa Juana, Chile"</span>,
   <span class="c-prop">"actualmente"</span>: [
-    <span class="c-str">"Análisis de Datos (Talento Digital)"</span>,
-    <span class="c-str">"LLMs + RAG local (Ollama, ChromaDB)"</span>
+    <span class="c-str">"Análisis de Datos (Talento Digital)"</span>
   ],
   <span class="c-prop">"especialidades"</span>: [<span class="c-str">"PLC S7-1200"</span>, <span class="c-str">"TIA Portal"</span>, <span class="c-str">"Python"</span>],
-  <span class="c-prop">"disponible"</span>: <span class="c-bool">true</span>
+  <span class="c-prop">"disponible"</span>: <span class="c-bool">True</span>
 <span class="c-key">}</span></code></pre>
                 </div>
             </div>
@@ -165,7 +164,7 @@
                     </div>
                     <div class="info-item">
                         <span class="info-label">Idiomas</span>
-                        <span class="info-value">Español (nativo), Inglés (intermedio)</span>
+                        <span class="info-value">Español (nativo), Inglés (Básico)</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">Disponibilidad</span>
@@ -222,6 +221,25 @@
                 <!-- Curso 1 - Real del CV -->
                 <article class="course-card reveal">
                     <div class="course-top">
+                        <span class="course-platform">Universidad del Bío-Bío</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">PLC Siemens S7-1200 · TIA Portal</h3>
+                    <p class="course-desc">
+                        Programación de controladores lógicos programables Siemens S7-1200 en
+                        TIA Portal usando lógica Ladder. Desarrollo básico de HMI, integración
+                        de tableros eléctricos (TDA/TDF) y pruebas punto a punto en proyectos
+                        de automatización industrial.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2016 – 2025</span>
+                        <span class="course-duration">Carrera + Práctica</span>
+                    </div>
+                </article>
+
+                <!-- Curso 2 -->
+                <article class="course-card reveal">
+                    <div class="course-top">
                         <span class="course-platform">Talento Digital / SENCE</span>
                         <span class="course-status status-progress">En progreso</span>
                     </div>
@@ -237,7 +255,7 @@
                     </div>
                 </article>
 
-                <!-- Curso 2 -->
+                <!-- Curso 3 -->
                 <article class="course-card reveal">
                     <div class="course-top">
                         <span class="course-platform">Formación autodidacta</span>
@@ -257,25 +275,6 @@
                     </div>
                 </article>
 
-                <!-- Curso 3 -->
-                <article class="course-card reveal">
-                    <div class="course-top">
-                        <span class="course-platform">Universidad del Bío-Bío</span>
-                        <span class="course-status status-done">Completado</span>
-                    </div>
-                    <h3 class="course-title">PLC Siemens S7-1200 · TIA Portal</h3>
-                    <p class="course-desc">
-                        Programación de controladores lógicos programables Siemens S7-1200 en
-                        TIA Portal usando lógica Ladder. Desarrollo básico de HMI, integración
-                        de tableros eléctricos (TDA/TDF) y pruebas punto a punto en proyectos
-                        de automatización industrial.
-                    </p>
-                    <div class="course-meta">
-                        <span class="course-date">2016 – 2025</span>
-                        <span class="course-duration">Carrera + Práctica</span>
-                    </div>
-                </article>
-
                 <!-- Curso 4 -->
                 <article class="course-card reveal">
                     <div class="course-top">
@@ -292,23 +291,6 @@
                     <div class="course-meta">
                         <span class="course-date">2022 – 2025</span>
                         <span class="course-duration">Práctica continua</span>
-                    </div>
-                </article>
-
-                <!-- Curso 5 - plantilla para copiar/pegar -->
-                <article class="course-card reveal">
-                    <div class="course-top">
-                        <span class="course-platform">[Plataforma]</span>
-                        <span class="course-status status-done">Completado</span>
-                    </div>
-                    <h3 class="course-title">[Nombre del curso]</h3>
-                    <p class="course-desc">
-                        [Copia este bloque para agregar un nuevo curso. Describe brevemente
-                        qué aprendiste, qué herramientas usaste y qué habilidades adquiriste.]
-                    </p>
-                    <div class="course-meta">
-                        <span class="course-date">[Año]</span>
-                        <span class="course-duration">[Duración]</span>
                     </div>
                 </article>
             </div>
@@ -520,10 +502,35 @@
                 </article>
                 ============================================================
                 -->
-
-                <!-- Proyecto 1 - RAG / LLM local -->
+                <!-- Proyecto de titulo -->
                 <article class="project-card reveal">
                     <div class="project-image project-image-1">
+                        <div class="project-overlay">
+                            <span class="project-category">Electronica de Potencia</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Estudio de control de potencia mediante control PI utilizado en convertidor trifásico para carga de vehículo eléctrico</h3>
+                        <p class="project-desc">
+                            Desarrollo y simulación de un sistema de control de potencia para la carga de baterías de vehículos eléctricos mediante un convertidor inversor trifásico. 
+                            Se implementó un controlador PI para regular la potencia activa y un controlador resonante para las corrientes, evaluando su desempeño mediante simulaciones en MATLAB y PSIM. 
+                            El proyecto permitió validar una estrategia de control eficiente para aplicaciones de electromovilidad.
+                        </p>
+                        <div class="project-tech">
+                            <span>Convertidores estáticos</span>
+                            <span>Control PI</span>
+                            <span>Control Resonante</span>
+                            <span>Simulación en MATLAB y PSIM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Krou705" target="_blank" rel="noopener">Ver Documento →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto - RAG / LLM local -->
+                <article class="project-card reveal">
+                    <div class="project-image project-image-2">
                         <div class="project-overlay">
                             <span class="project-category">IA · NLP</span>
                         </div>
@@ -543,14 +550,14 @@
                             <span>RAG</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Krou705" target="_blank" rel="noopener">Ver código →</a>
+                            <a href="https://github.com/Krou705/skyrim-traductor-AI-ollama" target="_blank" rel="noopener">Ver Repositorio →</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Proyecto 2 - Visión por Computador -->
                 <article class="project-card reveal">
-                    <div class="project-image project-image-2">
+                    <div class="project-image project-image-3">
                         <div class="project-overlay">
                             <span class="project-category">Visión Artificial</span>
                         </div>
@@ -568,15 +575,12 @@
                             <span>OpenCV</span>
                             <span>Datasets</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Krou705" target="_blank" rel="noopener">Ver repos →</a>
-                        </div>
                     </div>
                 </article>
 
                 <!-- Proyecto 3 - PLC / Automatización -->
                 <article class="project-card reveal">
-                    <div class="project-image project-image-3">
+                    <div class="project-image project-image-4">
                         <div class="project-overlay">
                             <span class="project-category">Automatización</span>
                         </div>
@@ -596,7 +600,8 @@
                             <span>AutoCAD</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Krou705" target="_blank" rel="noopener">Ver más →</a>
+                            <a href="https://www.linkedin.com/in/matias-ignacio-ramirez-benavides/overlay/Position/2746073280/treasury/?profileId=ACoAADe8LuwBDoYkiXX_YNitZwTl_aea6dWt0e8" target="_blank" rel="noopener">Ver imagen 1 →</a>
+                        <a href="https://www.linkedin.com/in/matias-ignacio-ramirez-benavides/overlay/Position/2746073280/treasury/?profileId=ACoAADe8LuwBDoYkiXX_YNitZwTl_aea6dWt0e8">Ver imagen 2 →</a>
                         </div>
                     </div>
                 </article>
