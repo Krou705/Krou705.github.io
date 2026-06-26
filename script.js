@@ -199,7 +199,7 @@ function handleSubmit(event) {
     }
 
     // CAMBIA este email por el tuyo
-    const yourEmail = 'matiasramirez@example.com';
+    const yourEmail = 'matiasramirez705@gmail.com';
 
     const subject = encodeURIComponent(`Portfolio - Mensaje de ${name}`);
     const body = encodeURIComponent(
@@ -221,4 +221,82 @@ function handleSubmit(event) {
     }, 1500);
 
     return false;
+}
+
+// ===== COPIAR EMAIL AL PORTAPAPELES =====
+// Se usa desde:
+//   1. El ícono de email en el hero (#email-link)
+//   2. El enlace de email en la sección contacto (#email-link-contact)
+//   3. El botón "copiar" junto al email en contacto
+//
+// Comportamiento:
+//   - Copia el email al portapapeles (con fallback para navegadores antiguos)
+//   - Muestra un mensaje temporal "Correo copiado ✓"
+//   - Si el trigger es un <a href="mailto:...">, también abre la app de correo
+//     tras 300ms (para que el mensaje sea visible primero)
+//
+// Parámetros:
+//   event     → el evento del click
+//   msgId     → id del elemento <span> donde mostrar el mensaje
+//   customEmail → (opcional) email a copiar; si no se pasa, se lee del <a>
+
+const PORTFOLIO_EMAIL = 'matiasramirez705@gmail.com';
+
+function copyEmail(event, msgId, customEmail) {
+    if (event) event.preventDefault();
+
+    const email = customEmail || PORTFOLIO_EMAIL;
+    const msg = document.getElementById(msgId);
+
+    // Intentar con la API moderna del portapapeles
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email)
+            .then(() => showCopyMsg(msg))
+            .catch(() => {
+                fallbackCopyText(email);
+                showCopyMsg(msg);
+            });
+    } else {
+        // Fallback para navegadores antiguos / contextos no seguros
+        fallbackCopyText(email);
+        showCopyMsg(msg);
+    }
+
+    // Si el trigger fue un <a href="mailto:...">, abrir cliente de correo
+    // después de un pequeño delay para que el mensaje "copiado" sea visible
+    const link = event && event.currentTarget;
+    if (link && link.tagName === 'A' && link.getAttribute('href') && link.getAttribute('href').startsWith('mailto:')) {
+        setTimeout(() => {
+            window.location.href = link.getAttribute('href');
+        }, 400);
+    }
+}
+
+// Fallback para copiar texto cuando navigator.clipboard no está disponible
+// (ej: HTTP no seguro, navegadores antiguos, WebView embebidos)
+function fallbackCopyText(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'absolute';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        document.execCommand('copy');
+    } catch (e) {
+        // Silencioso: el mailto: de todas formas abrirá el cliente
+    }
+    document.body.removeChild(textarea);
+}
+
+// Muestra el mensaje "Correo copiado ✓" por 2.5 segundos
+function showCopyMsg(msgEl) {
+    if (!msgEl) return;
+    msgEl.classList.add('show');
+    // Reiniciar el timer si ya estaba visible
+    clearTimeout(msgEl._copyTimer);
+    msgEl._copyTimer = setTimeout(() => {
+        msgEl.classList.remove('show');
+    }, 2500);
 }

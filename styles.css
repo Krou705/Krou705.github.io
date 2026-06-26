@@ -389,6 +389,9 @@ ul {
 .hero-social {
     display: flex;
     gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .hero-social a {
@@ -1414,6 +1417,96 @@ ul {
     .reveal {
         opacity: 1;
         transform: none;
+    }
+}
+
+/* ===== MENSAJE "CORREO COPIADO" ===== */
+/* Span que aparece cuando se copia el email al portapapeles.
+   Hay 2 variantes:
+   - .copy-msg          → versión "badge" flotante para el hero social
+   - .copy-msg-inline   → versión inline en la lista de contacto */
+
+.copy-msg {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.35rem 0.85rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--accent-cyan);
+    background: rgba(100, 255, 218, 0.1);
+    border: 1px solid var(--accent-cyan);
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px) scale(0.95);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.15);
+}
+
+.copy-msg.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+/* Variante inline para la lista de contacto (debajo del email) */
+.copy-msg-inline {
+    margin-top: 0.8rem;
+    display: inline-flex;
+}
+
+/* ===== BOTÓN "COPIAR" EN LISTA DE CONTACTO ===== */
+.copy-btn {
+    width: 26px;
+    height: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.copy-btn:hover {
+    color: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    background: rgba(100, 255, 218, 0.08);
+    transform: translateY(-1px);
+}
+
+.copy-btn:active {
+    transform: translateY(0);
+}
+
+/* El <li> que contiene el email + botón copiar necesita align-items center */
+.contact-list li:has(.copy-btn) {
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.contact-list li:has(.copy-btn) a.email-copy-link {
+    flex: 1;
+    min-width: 0;
+}
+
+.email-copy-link {
+    cursor: pointer;
+}
+
+/* Responsive: el mensaje del hero se ajusta en mobile */
+@media (max-width: 480px) {
+    .copy-msg {
+        font-size: 0.72rem;
+        padding: 0.3rem 0.7rem;
     }
 }
 
