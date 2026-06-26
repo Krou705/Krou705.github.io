@@ -1,6 +1,6 @@
-# Portfolio - Matías Ignacio Ramírez Benavides
+# Portafolio - Matías Ignacio Ramírez Benavides
 
-Portfolio web personal desplegado en **GitHub Pages** (gratis, en `https://krou705.github.io`).
+Portfolio web personal desplegado en **GitHub Pages** (gratis, en `https://matias-ramirez705.github.io`).
 
 ---
 
