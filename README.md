@@ -33,6 +33,7 @@ portfolio-github-pages/
 ├── index.html        ← Estructura y contenido (textos, secciones, enlaces)
 ├── styles.css        ← Estilos visuales (colores, tamaños, animaciones)
 ├── script.js         ← Comportamiento (menú mobile, animaciones, formulario)
+├── favicon.svg       ← Icono que aparece en la pestaña del navegador
 ├── README.md         ← Esta guía
 └── Documentos/       ← Carpeta con tus PDFs (CV, carta, certificados)
     ├── Curriculum_vitae_Matías_Ignacio_Ramírez_Benavides.pdf
@@ -43,6 +44,7 @@ portfolio-github-pages/
 - **`index.html`**: contiene todo el texto que se ve en la página (tu nombre, descripciones, lista de cursos, trabajos, etc.). Es el archivo que más vas a editar.
 - **`styles.css`**: controla cómo se ve todo (colores, fuentes, tamaños, disposición). Lo editas solo si quieres cambiar colores o estilos visuales.
 - **`script.js`**: hace que el menú funcione en mobile, que las animaciones aparezcan al hacer scroll, y que el botón de email copie al portapapeles. Rara vez lo editas.
+- **`favicon.svg`**: icono que aparece en la pestaña del navegador (arriba, al lado del título). Es un SVG con el símbolo `</>` en gradiente cian-morado.
 
 ---
 
@@ -286,6 +288,24 @@ Si los números no coinciden, la barra se llenará distinto al porcentaje mostra
 
 **Para agregar una nueva categoría**: copia todo un bloque `<div class="skill-category reveal">...</div>` y pégalo al final de `<div class="skills-grid">`.
 
+**Para hacer que una categoría ocupe todo el ancho** (como "Competencias"): agrega la clase `skill-full-width` al `<div class="skill-category">`:
+
+```html
+<!-- Antes: ocupa 1 columna -->
+<div class="skill-category reveal">
+    <h3 class="skill-cat-title">Competencias</h3>
+    ...
+</div>
+
+<!-- Después: ocupa todo el ancho disponible -->
+<div class="skill-category reveal skill-full-width">
+    <h3 class="skill-cat-title">Competencias</h3>
+    ...
+</div>
+```
+
+Útil cuando una categoría tiene muchas tags y se ve mejor ocupando toda la fila.
+
 ---
 
 ### Agregar un documento PDF descargable
@@ -409,6 +429,39 @@ Actualmente, en el Hero aparece una "ventana de código" decorativa con tu info 
     box-shadow: 0 0 40px rgba(100, 255, 218, 0.15);
 }
 ```
+
+---
+
+### Cambiar el favicon (icono de la pestaña del navegador)
+
+El favicon es el icono que aparece en la pestaña del navegador, al lado del título de la página. Actualmente es un SVG con el símbolo `</>` en gradiente cian-morado.
+
+**Opción 1: Usar un icono SVG propio**
+
+1. Crea o descarga un icono en formato SVG (cuadrado, idealmente 64x64)
+2. Súbelo al repositorio con el nombre `favicon.svg` (reemplazando el actual)
+3. No necesitas tocar el HTML, el `<link>` ya está configurado
+
+**Opción 2: Usar una imagen PNG o JPG**
+
+1. Sube tu imagen (ej: `favicon.png`) al repositorio
+2. En `index.html`, busca estas líneas en el `<head>`:
+   ```html
+   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+   <link rel="apple-touch-icon" href="favicon.svg">
+   ```
+3. Cámbialas por:
+   ```html
+   <link rel="icon" type="image/png" href="favicon.png">
+   <link rel="apple-touch-icon" href="favicon.png">
+   ```
+
+**Opción 3: Crear un favicon online**
+
+- https://favicon.io/ → genera favicons a partir de texto, imágenes o emojis
+- https://realfavicongenerator.net/ → genera favicons para todos los dispositivos y navegadores
+
+**Tip**: el favicon puede tardar 24-48 horas en actualizarse en el navegador debido a la caché. Para verlo rápido, abre en incógnito o limpia caché con `Ctrl + Shift + R`.
 
 ---
 
